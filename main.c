@@ -25,7 +25,7 @@ int main()
 
         const char *source_ptr = (const char*) source_string;
 
-        int32_t source_lenght = strlen(source_ptr);
+        int32_t source_length = strlen(source_ptr);
 
         // Adjust size as needed based on expected output length
         char dest_buffer[1024];
@@ -39,7 +39,7 @@ int main()
                       dest_ptr,
                       dest_capacity,
                       source_ptr,
-                      source_lenght,
+                      source_length,
                       &error );
 
         if ( U_FAILURE(error) )
