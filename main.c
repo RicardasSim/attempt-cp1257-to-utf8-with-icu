@@ -80,7 +80,7 @@ int main()
 
         UChar *target_ptr = target_buffer;
 
-        UChar *target_limit_ptr = target_ptr + sizeof(target_buffer);
+        UChar *target_limit_ptr = target_ptr + sizeof(target_buffer) / sizeof *target_buffer;
 
         ucnv_toUnicode( converter,
                         &target_ptr,
